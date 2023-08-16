@@ -1,0 +1,89 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    z-index: 2;
+}
+.principal,.secundario,.tercero{
+    text-align: center;
+    width: 250px;
+    height: 390px;
+    margin-top: 4%;
+    background: rgba(255,255,255, 0.2);
+    border-radius: 5px;
+    backdrop-filter: blur(1px);
+    box-shadow:0 0 15px gray;
+}
+#input1,#input2,#input3,#input4{
+    width: 170px;
+    height: 80px;
+    background: rgba(249,249,250, 0.1);
+    border-radius: 5px;
+    box-shadow: 0 0 5px white;
+}
+#botones-principales{
+    width: 85px;
+    height: 25px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: aqua;
+    box-shadow: 0 0 5px aqua,
+    0 0 10px aqua,0 0 10px aqua;
+    color: #434343;
+}
+#botones-principales:hover{
+background-color: yellow;
+box-shadow: 0 0 5px yellow;
+}
+#video{
+    position: fixed;
+    z-index: -1;
+}
+@media(min-aspect-ratio: 16/9){
+    #video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media(max-aspect-ratio: 16/9){
+    #video{
+        width: auto;
+        height: 100%;
+    }
+}
+#numeros{
+    background: rgba(249,249,250, 0.1);
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0 0 5px white;
+}
+#input1,#input2,#input3,#input4,#numeros::placeholder{
+    color: rgb(249,249 ,250);
+    text-shadow: 0 0 5px white;
+    font-family: 'DM Sans', sans-serif;
+}
+h2{
+    color: white;
+    text-shadow: 0 0 5px white,
+    0 0 10px black;  
+}
+#mensajeAlerta{
+    display: none;
+    color: white;
+    text-shadow: 0 0 5px white,
+    0 0 10px white,0 0 15px black;
+}
+#mensajedesplazamiento{
+    display: none;
+    color: white;
+    text-shadow: 0 0 5px white,
+    0 0 10px white,0 0 15px black;
+}

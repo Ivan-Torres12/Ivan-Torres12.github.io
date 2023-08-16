@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./mensajes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap" rel="stylesheet">
+    <title>Mensajes Cifrados</title>
+</head>
+<body>
+    <main>
+        <video id="video" autoplay loop muted src="./48 (manuDT).mp4"></video>
+        <div class="container">
+            <section class="principal">
+                <br><h2>Mensaje original</h2>
+                <br><input id="input1"   required type="text"><br>
+                <br><button onclick="textCipher()" id="botones-principales"><h4>Cifrar</h4></button>
+                <br><br> <h2>Mensaje cifrado</h2>
+                <br><input id="input2" type="text" disabled>
+            </section>
+            <section class="secundario">
+                <br><h2>Numeros <br> Desplazamiento</h2>
+                <br><input id="numeros" required type="number" value="1"><br>
+                <br><div id="mensajeAlerta">El texto contiene caracteres no válidos.</div>
+                <div id="mensajedesplazamiento">Ingrese un valor mayor a 0.</div>
+            </section>
+            <section class="tercero">
+                <br> <h2>Mensaje cifrado</h2>
+                <br><input id="input3" required type="text"><br>
+                <br><button onclick="textCifrado()" id="botones-principales"><h4>Cifrar</h4></button>
+                <br><br><h2>Mensaje original</h2>
+                <br><input id="input4" type="text" disabled>
+            </section>
+        </div>
+    </main>
+    <script src="./mensajes.js"></script>
+</body>
+</html>
